@@ -23,7 +23,8 @@
               poppins: ["Poppins", "sans-serif"],
             },
             backgroundImage: {
-              bannerImg : "url('/images/banner.jpg')"
+              bannerImg : "url('/images/banner.jpg')",
+              footerImg : "url('/images/footer-bg.jpg')",
             }
           },
         },
@@ -257,5 +258,27 @@
       <!-- ! services section end -->
     </main>
     <!-- ! main section end -->
+    <!-- ! footer section start -->
+    <footer class="bg-footerImg bg-cover h-96 py-7">
+      <!-- ! container -->
+      <div class="h-full flex flex-col justify-center lg:px-20 md:px-14 sm:px-12 px-5 text-white text-center">
+        <div>
+          <div class="font-bebas flex items-center justify-center gap-x-2">
+            <img
+              class="inline md:w-10 sm:w-10 w-6 rounded-r-3xl"
+              src="./images/logo.png"
+              alt=""
+            />
+            <span class="md:text-2xl sm:text-2xl text-1xl font-bold"
+              >Production Movies</span
+            >
+          </div>
+          <h4 class="uppercase font-bebas font-bold mt-4 text-2xl">next level experience</h4>
+          <p class="mt-2">Feugiat nibh litora semper proin nullam facilisi volutpat ex ullamcorper.</p>
+        </div>
+        <p class="mt-5 text-slate-300">Copyright © 2021 Jhaka Naka Production, All rights reserved. Present by Mir Hussain</p>
+      </div>
+    </footer>
+    <!-- ! footer section end -->
   </body>
 </html>
