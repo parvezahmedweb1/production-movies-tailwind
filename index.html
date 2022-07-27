@@ -14,11 +14,15 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              textPrimary: "#FECC02",
             },
             fontFamily: {
               bebas: ["Bebas Neue", "cursive"],
               poppins: ["Poppins", "sans-serif"],
             },
+            backgroundImage: {
+              bannerImg : "url('/images/banner.jpg')"
+            }
           },
         },
       };
@@ -26,13 +30,13 @@
   </head>
   <body>
     <!-- ! header section start -->
-    <header class="py-5 absolute w-full">
+    <header class="py-5 absolute w-full ">
       <!-- ! container -->
       <div class="lg:px-20 md:px-14 sm:px-12 px-5">
-        <nav class="flex justify-between items-center">
+        <nav class="flex justify-between items-center text-white">
           <div class="font-bebas flex items-center gap-x-2">
             <img
-              class="inline md:w-10 sm:w-10 w-6"
+              class="inline md:w-10 sm:w-10 w-6 rounded-r-3xl"
               src="./images/logo.png"
               alt=""
             />
@@ -65,5 +69,23 @@
       </div>
     </header>
     <!-- ! header section end -->
+    <!-- ! main section start -->
+    <main>
+      <!-- ! home section start -->
+      <section class="pt-20 h-screen bg-bannerImg bg-cover flex items-center">
+        <!-- ! container -->
+        <div class="lg:px-20 md:px-14 sm:px-12 px-5">
+          <!-- ! home -->
+          <div class="text-white w-3/4 font-bebas font-bold uppercase">
+            <p>Movie production studio</p>
+            <h1 class="lg:text-6xl md:text-5xl sm:text-4xl text-2xl leading-normal font-extrabold">Films MAde to <br> <span class="text-textPrimary">Perfection</span></h1>
+            <p class="font-poppins capitalize text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
+              luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <button class="uppercase mt-5 border-2 lg:px-6 md:px-5 sm:px-4 px-2 lg:py-3 md:py-2 sm:py-1 py-1 rounded-lg font-bold hover:border-textPrimary hover:text-textPrimary">Discover More</button>
+          </div>
+      </section>
+      <!-- ! home section end -->
+    </main>
+    <!-- ! main section end -->
   </body>
 </html>
